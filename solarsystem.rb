@@ -32,6 +32,8 @@ end
 
 class Planet < Body
 
+  attr_reader :moons
+
   def initialize(name, mass, day, year)
     super(name, mass)
     @day = day
